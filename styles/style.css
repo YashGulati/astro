@@ -1,9 +1,6 @@
 .nodisplay {
   display: none;
 }
-.nav-above img {
-  border-radius: 50%;
-}
 .nav-above a {
   color: #fff;
 }
