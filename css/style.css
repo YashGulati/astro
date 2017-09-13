@@ -17999,7 +17999,8 @@ input, button, select, textarea {
 .page {
   overflow: hidden;
   position: relative;
-  background: url("../images/body-bg.jpg");
+  /*background: url("../images/body-bg.jpg");*/
+  background: #300032;
   z-index: 0;
 }
 
