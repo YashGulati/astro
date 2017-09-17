@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en" class="wide wow-animation">
+  <head>
+    <title>Horoscope</title>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oregano:400%7COpen+Sans:300,400,700">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/translateelement.css">
+    <link rel="stylesheet" href="styles/contact.css">
+		<!--[if lt IE 10]>
+    <div style="background: #212121; padding: 10px 0; box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3); clear: both; text-align:center; position: relative; z-index:1;"><a href="https://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
+    <script src="js/html5shiv.min.js"></script>
+		<![endif]-->
+  </head>
+  <body>
+    <div class="page text-center">
+      <div id="particles-js"></div>
+      <div class="page-loader">
+        <div>
+          <div class="page-loader-body">
+            <div class="cssload-loader">
+              <div class="cssload-side"></div>
+              <div class="cssload-side"></div>
+              <div class="cssload-side"></div>
+              <div class="cssload-side"></div>
+              <div class="cssload-side"></div>
+              <div class="cssload-side"></div>
+              <div class="cssload-side"></div>
+              <div class="cssload-side"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <header class="page-header">
+        <div class="rd-navbar-wrap">
+          <nav data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fullwidth" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-static" data-md-stick-up-offset="55px" data-lg-stick-up-offset="55px" class="rd-navbar rd-navbar-centered">
+            <div class="rd-navbar-inner image-nav" style="max-width: 100%; padding-bottom: 0px;">
+              <div class="rd-navbar-panel">
+                <button data-rd-navbar-toggle=".rd-navbar-nav-wrap" class="rd-navbar-toggle"><span></span></button>
+                <div class="rd-navbar-brand veil-md reveal-tablet-block">
+                  <a href="index.html" class="brand-name">
+                    <img src="images/logo-224x48.png" width="224" height="48" alt="" class="img-responsive center-block">
+                  </a>
+                </div>
+                <div class="rd-navbar-nav-wrap">
+                  <ul class="rd-navbar-nav">
+                    <li class="active">
+                      <div class="nav-above hidden-sm hidden-xs">
+                        <a href="love.html">
+                          <div class="wow zoomIn" data-wow-duration="1s" data-wow-offset="100" style="visibility: visible; animation-duration: 1s; animation-name: zoomIn;">
+                            <div class="wow tada" data-wow-delay="1s" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-delay: 1s; animation-name: tada;">
+                              <div class="wow rubberBand" data-wow-delay="2000ms" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-delay: 2000ms; animation-name: rubberBand;">
+                                <div class="wow pulse animated" data-wow-delay="300ms" data-wow-iteration="infinite" data-wow-duration="2s" style="visibility: visible; animation-duration: 2s; animation-delay: 300ms; animation-iteration-count: infinite; animation-name: pulse;">
+                                  <a href="love.html" title="Love">
+                                    <img src="images/logos/love.png" style="height: 50px; width: 50px;" />
+                                    <br/>
+                                    Love
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="nav-above hidden-sm hidden-xs">
+                        <a href="marriage.html">
+                          <div class="wow zoomIn" data-wow-duration="1s" data-wow-offset="100" style="visibility: visible; animation-duration: 1s; animation-name: zoomIn;">
+                            <div class="wow tada" data-wow-delay="1s" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-delay: 1s; animation-name: tada;">
+                              <div class="wow rubberBand" data-wow-delay="2000ms" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-delay: 2000ms; animation-name: rubberBand;">
+                                <div class="wow pulse animated" data-wow-delay="300ms" data-wow-iteration="infinite" data-wow-duration="2s" style="visibility: visible; animation-duration: 2s; animation-delay: 300ms; animation-iteration-count: infinite; animation-name: pulse;">
+                                  <a href="marriage.html" title="Marriage">
+                                    <img src="images/logos/marry.png" style="height: 50px; width: 50px;" />
+                                    <br/>
+                                    Marriage
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="nav-above hidden-sm hidden-xs">
+                        <a href="#">
+                          <div class="wow zoomIn" data-wow-duration="1s" data-wow-offset="100" style="visibility: visible; animation-duration: 1s; animation-name: zoomIn;">
+                            <div class="wow tada" data-wow-delay="1s" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-delay: 1s; animation-name: tada;">
+                              <div class="wow rubberBand" data-wow-delay="2000ms" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-delay: 2000ms; animation-name: rubberBand;">
+                                <div class="wow pulse animated" data-wow-delay="300ms" data-wow-iteration="infinite" data-wow-duration="2s" style="visibility: visible; animation-duration: 2s; animation-delay: 300ms; animation-iteration-count: infinite; animation-name: pulse;">
+                                  <a href="career.html" title="Career">
+                                    <img src="images/logos/career.png" style="height: 50px; width: 50px;" />
+                                    <br/>
+                                    Career
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="nav-above hidden-sm hidden-xs">
+                        <a href="#">
+                          <div class="wow zoomIn" data-wow-duration="1s" data-wow-offset="100" style="visibility: visible; animation-duration: 1s; animation-name: zoomIn;">
+                            <div class="wow tada" data-wow-delay="1s" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-delay: 1s; animation-name: tada;">
+                              <div class="wow rubberBand" data-wow-delay="2000ms" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-delay: 2000ms; animation-name: rubberBand;">
+                                <div class="wow pulse animated" data-wow-delay="300ms" data-wow-iteration="infinite" data-wow-duration="2s" style="visibility: visible; animation-duration: 2s; animation-delay: 300ms; animation-iteration-count: infinite; animation-name: pulse;">
+                                  <a href="finance.html" title="Finance">
+                                    <img src="images/logos/finance.png" style="height: 50px; width: 50px;" />
+                                    <br/>
+                                    Finance
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="nav-above hidden-sm hidden-xs">
+                        <a href="#">
+                          <div class="wow zoomIn" data-wow-duration="1s" data-wow-offset="100" style="visibility: visible; animation-duration: 1s; animation-name: zoomIn;">
+                            <div class="wow tada" data-wow-delay="1s" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-delay: 1s; animation-name: tada;">
+                              <div class="wow rubberBand" data-wow-delay="2000ms" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-delay: 2000ms; animation-name: rubberBand;">
+                                <div class="wow pulse animated" data-wow-delay="300ms" data-wow-iteration="infinite" data-wow-duration="2s" style="visibility: visible; animation-duration: 2s; animation-delay: 300ms; animation-iteration-count: infinite; animation-name: pulse;">
+                                  <a href="education.html" title="Education">
+                                    <img src="images/logos/education.png" style="height: 50px; width: 50px;" />
+                                    <br/>
+                                    Education
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="nav-above hidden-sm hidden-xs">
+                        <a href="#">
+                          <div class="wow zoomIn" data-wow-duration="1s" data-wow-offset="100" style="visibility: visible; animation-duration: 1s; animation-name: zoomIn;">
+                            <div class="wow tada" data-wow-delay="1s" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-delay: 1s; animation-name: tada;">
+                              <div class="wow rubberBand" data-wow-delay="2000ms" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-delay: 2000ms; animation-name: rubberBand;">
+                                <div class="wow pulse animated" data-wow-delay="300ms" data-wow-iteration="infinite" data-wow-duration="2s" style="visibility: visible; animation-duration: 2s; animation-delay: 300ms; animation-iteration-count: infinite; animation-name: pulse;">
+                                  <a href="health.html" title="Health">
+                                    <img src="images/logos/health.png" style="height: 50px; width: 50px;" />
+                                    <br/>
+                                    Health
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="nav-above hidden-sm hidden-xs">
+                        <a href="#">
+                          <div class="wow zoomIn" data-wow-duration="1s" data-wow-offset="100" style="visibility: visible; animation-duration: 1s; animation-name: zoomIn;">
+                            <div class="wow tada" data-wow-delay="1s" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-delay: 1s; animation-name: tada;">
+                              <div class="wow rubberBand" data-wow-delay="2000ms" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-delay: 2000ms; animation-name: rubberBand;">
+                                <div class="wow pulse animated" data-wow-delay="300ms" data-wow-iteration="infinite" data-wow-duration="2s" style="visibility: visible; animation-duration: 2s; animation-delay: 300ms; animation-iteration-count: infinite; animation-name: pulse;">
+                                  <a href="buysell.html" title="Buy/Sell">
+                                    <img src="images/logos/buy.png" style="height: 50px; width: 50px;" />
+                                    <br/>
+                                    Buy/Sell
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="nav-above hidden-sm hidden-xs">
+                        <a href="remedies.html">
+                          <div class="wow zoomIn" data-wow-duration="1s" data-wow-offset="100" style="visibility: visible; animation-duration: 1s; animation-name: zoomIn;">
+                            <div class="wow tada" data-wow-delay="1s" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-delay: 1s; animation-name: tada;">
+                              <div class="wow rubberBand" data-wow-delay="2000ms" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-delay: 2000ms; animation-name: rubberBand;">
+                                <div class="wow pulse animated" data-wow-delay="300ms" data-wow-iteration="infinite" data-wow-duration="2s" style="visibility: visible; animation-duration: 2s; animation-delay: 300ms; animation-iteration-count: infinite; animation-name: pulse;">
+                                  <a href="remedies.html" title="Remedies">
+                                    <img src="images/logos/remedies.png" style="height: 50px; width: 50px;" />
+                                    <br/>
+                                    Remedies
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <div class="rd-navbar-wrap">
+          <nav data-layout="rd-navbar-fixed"
+            data-sm-layout="rd-navbar-fixed"
+            data-md-layout="rd-navbar-fullwidth"
+            data-md-device-layout="rd-navbar-fixed"
+            data-lg-layout="rd-navbar-static"
+            data-lg-device-layout="rd-navbar-static"
+            data-md-stick-up-offset="55px"
+            data-lg-stick-up-offset="55px"
+            class="rd-navbar rd-navbar-centered">
+            <div class="rd-navbar-inner" style="padding-top: 10px;">
+              <div class="rd-navbar-panel">
+                <button data-rd-navbar-toggle=".rd-navbar-nav-wrap" class="rd-navbar-toggle"><span></span></button>
+                <div class="rd-navbar-brand veil-md reveal-tablet-block"><a href="index.html" class="brand-name"> <img src="images/logo-224x48.png" width="224" height="48" alt="" class="img-responsive center-block"></a></div>
+                <div class="rd-navbar-nav-wrap">
+                  <ul class="rd-navbar-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us </a></li>
+                    <li class="active"><a href="#">Horoscope</a></li>
+                    <li>
+                      <span class="rd-navbar-brand veil veil-tablet reveal-md-inline-block">
+                        <a href="index.html" class="brand-name">
+                          <span class="img-icon"></span>
+                          <img src="images/logo-156x45.png" width="156" height="45" alt=""
+                            class="img-responsive center-block">
+                        </a>
+                      </span>
+                    </li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+
+      <main class="page-content">
+        <section class="section-95">
+          <div class="shell text-center">
+            <div class="range range-xs-center">
+              <div class="cell-xs-12">
+                <h2>Free horoscopes for you </h2>
+              </div>
+              <div class="cell-sm-10 cell-lg-8 offset-top-30">
+                <div class="box-button"> <a href="love-&amp;-sex.html" class="btn btn-transparent">Love & Sex</a><a href="dating.html" class="btn btn-transparent">Dating </a><a href="work-&amp;-money.html" class="btn btn-transparent">Work & Money</a><a href="health-&amp;-beauty.html" class="btn btn-transparent btn-active">Health & Beauty  </a></div>
+              </div>
+              <div class="cell-xs-12 cell-lg-10 offset-top-30">
+                <div class="box-items">
+                  <div class="item"><a href="#">
+                      <div class="item-img"> <img src="images/home-icon-2.png" alt=""></div>
+                      <div class="item-caption">
+                        <p class="text-bold">Aries</p>
+                        <p class="offset-top-0">Mar 21 - Apr 19</p>
+                      </div></a></div>
+                  <div class="item"><a href="#">
+                      <div class="item-img"> <img src="images/home-icon-3.png" alt=""></div>
+                      <div class="item-caption">
+                        <p class="text-bold">Taurus</p>
+                        <p class="offset-top-0">Apr 20 - May 20</p>
+                      </div></a></div>
+                  <div class="item"><a href="#">
+                      <div class="item-img"> <img src="images/horoscope-icon-1.png" alt=""></div>
+                      <div class="item-caption">
+                        <p class="text-bold">Gemini</p>
+                        <p class="offset-top-0">May 21 - Jun 20</p>
+                      </div></a></div>
+                  <div class="item"><a href="#">
+                      <div class="item-img"><img src="images/horoscope-icon-2.png" alt=""></div>
+                      <div class="item-caption">
+                        <p class="text-bold">Cancer</p>
+                        <p class="offset-top-0">Jan 21 - Jul 22</p>
+                      </div></a></div>
+                  <div class="item"><a href="#">
+                      <div class="item-img"> <img src="images/horoscope-icon-3.png" alt=""></div>
+                      <div class="item-caption">
+                        <p class="text-bold">Leo</p>
+                        <p class="offset-top-0">Jul 23 - Aug 22</p>
+                      </div></a></div>
+                  <div class="item"><a href="#">
+                      <div class="item-img"> <img src="images/home-icon-4.png" alt=""></div>
+                      <div class="item-caption">
+                        <p class="text-bold">Virgo</p>
+                        <p class="offset-top-0">Mar 21 - Apr 19</p>
+                      </div></a></div>
+                  <div class="item"><a href="#">
+                      <div class="item-img"> <img src="images/horoscope-icon-4.png" alt=""></div>
+                      <div class="item-caption">
+                        <p class="text-bold">Libra</p>
+                        <p class="offset-top-0">Sep 23 - Oct 22</p>
+                      </div></a></div>
+                  <div class="item"><a href="#">
+                      <div class="item-img"> <img src="images/horoscope-icon-5.png" alt=""></div>
+                      <div class="item-caption">
+                        <p class="text-bold">Scorpio</p>
+                        <p class="offset-top-0">Oct 23 - Nov 21</p>
+                      </div></a></div>
+                  <div class="item"><a href="#">
+                      <div class="item-img"> <img src="images/horoscope-icon-6.png" alt=""></div>
+                      <div class="item-caption">
+                        <p class="text-bold">Sagittarius</p>
+                        <p class="offset-top-0">Nov 22 - Dec 21</p>
+                      </div></a></div>
+                  <div class="item"><a href="#">
+                      <div class="item-img"> <img src="images/horoscope-icon-7.png" alt=""></div>
+                      <div class="item-caption">
+                        <p class="text-bold">Capricorn</p>
+                        <p class="offset-top-0">Dec 22 - Jan 19</p>
+                      </div></a></div>
+                  <div class="item"><a href="#">
+                      <div class="item-img"> <img src="images/horoscope-icon-8.png" alt=""></div>
+                      <div class="item-caption">
+                        <p class="text-bold">Aquarius</p>
+                        <p class="offset-top-0">Jan 20 - Feb 18</p>
+                      </div></a></div>
+                  <div class="item"><a href="#">
+                      <div class="item-img"> <img src="images/home-icon-1.png" alt=""></div>
+                      <div class="item-caption">
+                        <p class="text-bold">Pisces</p>
+                        <p class="offset-top-0">Feb 19 - Mar 20      </p>
+                      </div></a></div>
+                </div>
+              </div>
+              <div class="cell-xs-12 cell-lg-10 offset-top-70">
+                <div class="range text-left range-xs-center">
+                  <div class="cell-xs-10 cell-md-6"><a href="blog-post.html"><img src="images/horoscope-6-470x278.jpg" width="470" height="278" alt=""></a>
+                    <div class="offset-top-30"><a href="blog-post.html" class="text-bold text-primary big">When is the best to take care of health?</a>
+                      <p class="offset-top-20">For Aries, health will be fabulous throughout the month of February 2017 without any problems for the Aries sun sign. Their horoscope predicts a fabulous month on their career front with good support from the family. Now, let’s figure out the best health care time for other zodiac signs including Taurus, Gemini, and others.</p>
+                      <div class="offset-top-20"><a href="blog-post.html" class="btn btn-primary">Read more </a></div>
+                    </div>
+                  </div>
+                  <div class="cell-xs-10 cell-md-6 offset-top-40 offset-md-top-0"><a href="blog-post.html"><img src="images/horoscope-7-470x278.jpg" width="470" height="278" alt=""></a>
+                    <div class="offset-top-30"><a href="blog-post.html" class="text-bold text-primary big">The best way to relax for your zodiac sign</a>
+                      <p class="offset-top-20">Each zodiac sign has different triggers for what stresses them out, and also different stress relief tactics they use. Most people inevitably feel stressed from time to time, due to anything from job demands to financial worries to health problems, or other issues we all deal with in this modern world. Unless you’re somehow reading this from...</p>
+                      <div class="offset-top-20"><a href="blog-post.html" class="btn btn-primary">Read more  </a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="cell-xs-12 cell-lg-10 offset-top-40 offset-md-top-70">
+                <div class="range text-left range-xs-center">
+                  <div class="cell-xs-10 cell-md-6"><a href="blog-post.html"><img src="images/horoscope-8-470x278.jpg" width="470" height="278" alt=""></a>
+                    <div class="offset-top-30"><a href="blog-post.html" class="text-bold text-primary big">Your personal zodiac diet</a>
+                      <p class="offset-top-20">From the blood type diet to the personality type diet, so many programs now advocate weight loss regimens for your specific, well, type, we half expected to see the astro diet. The zodiac, after all, is the world's oldest classification system. Just for fun, we asked our leading astrologer, Sam Smith, what the stars might say about the future of your shape. </p>
+                      <div class="offset-top-20"><a href="blog-post.html" class="btn btn-primary">Read more </a></div>
+                    </div>
+                  </div>
+                  <div class="cell-xs-10 cell-md-6 offset-top-40 offset-md-top-0"><a href="blog-post.html"><img src="images/horoscope-9-470x278.jpg" width="470" height="278" alt=""></a>
+                    <div class="offset-top-30"><a href="blog-post.html" class="text-bold text-primary big">Stars talk about sports</a>
+                      <p class="offset-top-20">Competition is the soul and spirit of any sports or games. All of us are blessed with different talents and competing abilities which strongly determines the choice of the sports we indulge in. However, by studying the planetary positions in your Birth Chart, Astrology can help you identify your strengths and weaknesses to develop the authentic...</p>
+                      <div class="offset-top-20"><a href="blog-post.html" class="btn btn-primary">Read more            </a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Contact Us-->
+        <section class="section-95 section-md-bottom-45 bg-secondary">
+          <div class="shell">
+            <div class="range range-xs-center range-md-left text-md-left">
+              <div class="cell-sm-10 cell-md-3">
+                <h6>Address</h6>
+                <!-- Contact Info-->
+                <address class="contact-info p offset-top-20">
+                  <p>4578 Marmora St, <br> Chicago D04 89GR.</p>
+                  <dl>
+                    <dt>Telephone:</dt>
+                    <dd><a href="callto:#" class="text-gray-light link-decoration-none text-hover-primary">1-800-1234-567</a></dd>
+                  </dl>
+                  <dl class="offset-top-10">
+                    <dt>E-mail:</dt>
+                    <dd><a href="/cdn-cgi/l/email-protection#eccf" class="link-decoration-none"><span class="__cf_email__" data-cfemail="dcb1bdb5b09cb8b9b1b3b0b5b2b7f2b3aebb">[email&#160;protected]</span></a></dd>
+                  </dl>
+                </address>
+              </div>
+              <div class="cell-sm-10 cell-md-5 offset-top-40 offset-md-top-0">
+                <h6>Get in touch</h6>
+                <!-- RD Mailform-->
+                <form data-form-output="form-output-global" data-form-type="contact" method="post" action="bat/rd-mailform.php" class="rd-mailform text-left offset-top-20">
+                  <div class="range range-xs-center">
+                    <div class="cell-xs-6 inset-xs-right-7">
+                      <div class="form-group">
+                        <label for="contact-us-first-name" class="form-label">First name</label>
+                        <input id="contact-us-first-name" type="text" name="name" data-constraints="@Required" class="form-control">
+                      </div>
+                    </div>
+                    <div class="cell-xs-6 offset-top-10 offset-xs-top-0 inset-xs-left-7">
+                      <div class="form-group">
+                        <label for="contact-us-last-name" class="form-label">Last name</label>
+                        <input id="contact-us-last-name" type="text" name="name" data-constraints="@Required" class="form-control">
+                      </div>
+                    </div>
+                    <div class="cell-xs-6 offset-top-10 inset-xs-right-7">
+                      <div class="form-group">
+                        <label for="contact-us-email" class="form-label">Email</label>
+                        <input id="contact-us-email" type="email" name="email" data-constraints="@Email @Required" class="form-control">
+                      </div>
+                    </div>
+                    <div class="cell-xs-6 offset-top-10 inset-xs-left-7">
+                      <div class="form-group">
+                        <label for="contact-us-phone" class="form-label">Phone</label>
+                        <input id="contact-us-phone" type="text" name="phone" data-constraints="@Numeric @Required" class="form-control">
+                      </div>
+                    </div>
+                    <div class="cell-xs-12 offset-top-10 text-center text-lg-left">
+                      <div class="form-group">
+                        <label for="contact-us-message" class="form-label">Message</label>
+                        <textarea id="contact-us-message" name="message" data-constraints="@Required" class="form-control"></textarea>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="text-center text-md-right offset-top-10">
+                    <button type="submit" class="btn btn-primary">Send a message</button>
+                  </div>
+                </form>
+              </div>
+              <div class="cell-xs-10 cell-md-3 cell-md-preffix-1 offset-top-40 offset-md-top-0">
+                <h6>Flickr</h6>
+                <div data-photo-swipe-gallery="gallery" data-flickr-tags="tm62237" class="group-xs flickr widget-flickrfeed offset-top-20"><a data-photo-swipe-item="" href="https://farm6.staticflickr.com/5802/29943773064_35b614b909_c.jpg" data-image_c="href" data-size="1000x780" data-type="flickr-item" class="flickr-item"><img width="87" height="83" data-title="alt" src="https://farm6.staticflickr.com/5802/29943773064_35b614b909_q.jpg" alt="Movies" data-image_q="src"></a><a data-photo-swipe-item="" href="https://farm6.staticflickr.com/5681/29943773084_315b1fbcd5_c.jpg" data-image_c="href" data-size="1000x780" data-type="flickr-item" class="flickr-item"><img width="87" height="83" data-title="alt" src="https://farm6.staticflickr.com/5681/29943773084_315b1fbcd5_q.jpg" alt="Sexy and fashionable couple in sunglasses. Vogue" data-image_q="src"></a><a data-photo-swipe-item="" href="https://farm6.staticflickr.com/5623/29943772684_2273107e5b_c.jpg" data-image_c="href" data-size="1000x780" data-type="flickr-item" class="flickr-item"><img width="87" height="83" data-title="alt" src="https://farm6.staticflickr.com/5623/29943772684_2273107e5b_q.jpg" alt="5" data-image_q="src"></a><a data-photo-swipe-item="" href="https://farm6.staticflickr.com/5334/29943772954_5df42932e2_c.jpg" data-image_c="href" data-size="1000x780" data-type="flickr-item" class="flickr-item"><img width="87" height="83" data-title="alt" src="https://farm6.staticflickr.com/5334/29943772954_5df42932e2_q.jpg" alt="traditional breakfast" data-image_q="src"></a><a data-photo-swipe-item="" href="https://farm6.staticflickr.com/5334/29943772954_5df42932e2_c.jpg" data-image_c="href" data-size="1000x780" data-type="flickr-item" class="flickr-item"><img width="87" height="83" data-title="alt" src="https://farm6.staticflickr.com/5334/29943772954_5df42932e2_q.jpg" alt="traditional breakfast" data-image_q="src"></a><a data-photo-swipe-item="" href="https://farm6.staticflickr.com/5334/29943772954_5df42932e2_c.jpg" data-image_c="href" data-size="1000x780" data-type="flickr-item" class="flickr-item"><img width="87" height="83" data-title="alt" src="https://farm6.staticflickr.com/5334/29943772954_5df42932e2_q.jpg" alt="traditional breakfast" data-image_q="src"></a></div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="page-footer section-top-60 section-bottom-45 section-lg-top-45 section-lg-bottom-45
+        inset-left-25 inset-right-25 inset-lg-left-50 inset-lg-right-50">
+        <div data-items="2" data-xs-items="3" data-lg-items="6" data-stage-padding="5" data-loop="false"
+          data-margin="30" data-mouse-drag="false" data-dots="true" class="owl-carousel owl-carousel-centered">
+          <a href="#">
+            <img src="images/partners/logo-01-93x81.png" width="93" height="81" alt="" class="img-responsive
+              img-semi-transparent-inverse center-block">
+          </a>
+          <a href="#">
+            <img src="images/partners/logo-02-93x89.png" width="93" height="89" alt="" class="img-responsive
+              img-semi-transparent-inverse center-block">
+          </a>
+          <a href="#">
+            <img src="images/partners/logo-03-93x62.png" width="93" height="62" alt="" class="img-responsive
+              img-semi-transparent-inverse center-block">
+          </a>
+          <a href="#">
+            <img src="images/partners/logo-04-93x79.png" width="93" height="79" alt="" class="img-responsive
+              img-semi-transparent-inverse center-block">
+          </a>
+          <a href="#">
+            <img src="images/partners/logo-05-90x78.png" width="90" height="78" alt="" class="img-responsive
+              img-semi-transparent-inverse center-block">
+          </a>
+          <a href="#">
+            <img src="images/partners/logo-06-84x56.png" width="84" height="56" alt="" class="img-responsive
+            img-semi-transparent-inverse center-block">
+          </a>
+        </div>
+        <!-- {%FOOTER_LINK}-->
+      </footer>
+    </div>
+    <div id="form-output-global" class="snackbars"></div>
+    <div tabindex="-1" role="dialog" aria-hidden="true" class="pswp">
+      <div class="pswp__bg"></div>
+      <div class="pswp__scroll-wrap">
+        <div class="pswp__container">
+          <div class="pswp__item"></div>
+          <div class="pswp__item"></div>
+          <div class="pswp__item"></div>
+        </div>
+        <div class="pswp__ui pswp__ui--hidden">
+          <div class="pswp__top-bar">
+            <div class="pswp__counter"></div>
+            <button title="Close (Esc)" class="pswp__button pswp__button--close"></button>
+            <button title="Share" class="pswp__button pswp__button--share"></button>
+            <button title="Toggle fullscreen" class="pswp__button pswp__button--fs"></button>
+            <button title="Zoom in/out" class="pswp__button pswp__button--zoom"></button>
+            <div class="pswp__preloader">
+              <div class="pswp__preloader__icn">
+                <div class="pswp__preloader__cut">
+                  <div class="pswp__preloader__donut"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+            <div class="pswp__share-tooltip"></div>
+          </div>
+          <button title="Previous (arrow left)" class="pswp__button pswp__button--arrow--left"></button>
+          <button title="Next (arrow right)" class="pswp__button pswp__button--arrow--right"></button>
+          <div class="pswp__caption">
+            <div class="pswp__caption__cent"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Java script-->
+    <script src="js/core.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
