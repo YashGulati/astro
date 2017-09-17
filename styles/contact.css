@@ -1,5 +1,7 @@
 .nadi {
-	background: url(../images/panaiolai.jpg) repeat;
+	background: url(../images/contact/PlanetaryCycles.jpg) repeat;
+	background-size: cover;
+	padding: 2% 0%;
 }
 .bgnadi {
 	background: rgba(0, 0, 0, 0.58);
