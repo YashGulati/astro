@@ -9,20 +9,21 @@
 }
 
 .booking_button {
-  text-align: right;
+  margin-top: 5%;
+  text-align: center;
 }
 
 .services .service a {
   margin-top: 100px;
   background: none;
-  border: 2px solid #357ae8;
-  color: #357ae8;
+  border: 2px solid #ff5f6d;
+  color: #ff5f6d;
   font-weight: 900;
   padding: 1.5% 3.5%;
 }
 
 .services .service a:hover {
-  background: #357ae8;
+  background: #ff5f6d;
   color: #ccc;
-  border: 2px solid #357ae8;
+  border: 2px solid #ff5f6d;
 }
