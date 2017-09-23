@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/translateelement.css">
     <link rel="stylesheet" href="styles/contact.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css">
+
 		<!--[if lt IE 10]>
     <div style="background: #212121; padding: 10px 0; box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3); clear: both; text-align:center; position: relative; z-index:1;"><a href="https://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
     <script src="js/html5shiv.min.js"></script>
@@ -283,7 +286,11 @@ function googleTranslateElementInit() {
             <input type="text" name="name" id="lname" placeholder="Your Last Name ( Required )" class="form-control " required="">
           </div>
           <div class="col-md-6 col-sm-6 col-xs-6">
-            <input type="text" name="name" id="lname" placeholder="Gender ( Required )" class="form-control " required="">
+            <select>
+              <option value="">Select your Gender</option>
+              <option value="">Male</option>
+              <option value="">Female</option>
+            </select>
           </div>
           <div class="col-md-6 col-sm-6 col-xs-6">
             <!-- <input type="text" name="name" id="lname" placeholder="Country ( Required )" class="form-control " required=""> -->
@@ -320,15 +327,20 @@ for(var i=0; i<country_list.length; i++)
           <div class="col-md-6 col-sm-6 col-xs-6">
             <input type="text" name="name" id="datepicker" placeholder="Your Date of Birth ( Required )" class="form-control " required="">
           </div>
+
           <div class="col-md-6 col-sm-6 col-xs-6">
-            <input type="text" name="name" id="fname" placeholder="Your Time of Birth ( Required )" class="form-control " required="">
+            <input type="text" name="name" placeholder="Your Time of Birth ( Required )" class="form-control timepicker" required="">
           </div>
-          <div class="col-md-6 col-sm-6 col-xs-6">
-            <input type="text" name="name" id="datepicker" placeholder="Your Date of Appointment ( Required )" class="form-control " required="">
+
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <select>
+              <option>Married / UnMarried</option>
+              <option>Married</option>
+              <option>UnMarried</option>
+              <option></option>
+            </select>
           </div>
-          <div class="col-md-6 col-sm-6 col-xs-6">
-            <input type="text" name="name" id="fname" placeholder="Your Time of Appointment ( Required )" class="form-control " required="">
-          </div>
+
           <div class="col-md-12 col-sm-12 col-xs-12">
             <select class="form-control" name="service" id="service" required="">
               <option value="">--- Service ---</option>
@@ -606,6 +618,26 @@ for(var i=0; i<country_list.length; i++)
           return "<option>" + data + "</option>";
         })
       )
+
+
+    </script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
+    <script type="text/javascript">
+      $( "#datepicker" ).datepicker();
+
+      $('.timepicker').timepicker({
+          timeFormat: 'h:mm p',
+          interval: 60,
+          // minTime: '10',
+          // maxTime: '6:00pm',
+          // defaultTime: '11',
+          // startTime: '10:00',
+          dynamic: false,
+          dropdown: true,
+          scrollbar: true
+      });
+
     </script>
   </body>
 </html>
